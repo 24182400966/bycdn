@@ -5,7 +5,7 @@
     }
 
     50% {
-        transform: translateY(-400px)
+        transform: translateY(-300px)
     }
 
     to {
@@ -88,13 +88,13 @@
 }
 
 #div_digg {
-    bottom: 250px;
+    bottom: 150px;
     margin: 0;
     position: fixed;
     left: 216px;
     animation: jumping 5s ease-in-out;
     animation-iteration-count: infinite;
-    z-index: 1992
+    z-index: 1
 }
 
 .buryit {
@@ -114,7 +114,7 @@
 }
 
 .diggit:before {
-    content: "点\00A0\00A0\00A0赞";
+    content: "不错哟";/*\00A0\00A0\00A0*/
     position: absolute;
     top: -40px;
     left: 16px;
@@ -145,10 +145,10 @@ a.digg_gray {
 
 #xiaociguai {
     position: fixed;
-    bottom: 170px;
+    bottom: 70px;
     left: 200px;
     cursor: pointer;
-    z-index: 1993
+    z-index: 1
 }
 
 #xiaociguai>img {
