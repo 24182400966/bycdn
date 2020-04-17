@@ -1,0 +1,37 @@
+<!-- single.php最后加入 -->
+<link rel="stylesheet" href="j-base.css">
+
+  <div id="div_digg" style="animation: 5s ease-in-out 0s infinite normal none running jumping;"> 
+   <div class="diggit" onclick="votePost(8655963,'Digg')">
+    <span class="diggnum" id="digg_count"><a id="praise" data-no-instant="" class="favorite &lt;?php if(isset($_COOKIE['bigfa_ding_'.$post-&gt;ID])) echo ' done';?&gt;" href="javascript:;" rel="external nofollow" style="color:#fff" data-action="ding" data-id="&lt;?php the_ID(); ?&gt;"><span class="count">赞 
+       <!--?php if( get_post_meta($post--->ID,'bigfa_ding',true) ){ echo get_post_meta($post-&gt;ID,'bigfa_ding',true); } else { echo ''; }?&gt; </span> </a> </span> 
+   </div> 
+   <div id="div_digd">
+       <!-- 动态图像 -->
+        <ul>
+            <li>
+                <img src="https://ae01.alicdn.com/kf/H27d0ec9f581c4c3da4df2bf2f71f6b8ab.png" alt="">
+            </li>
+            <li>
+                <img src="https://ae01.alicdn.com/kf/H03afca7e1d66478fadc2c070c031c9c5z.png" alt="">
+            </li>
+            <li>
+                <img src="https://ae01.alicdn.com/kf/H949b7520d0a64d348bf40d66384e706aP.png" alt="">
+            </li>
+            <li>
+                <img src="https://ae01.alicdn.com/kf/H65f92771cd5e49ebbedb5b4e7951bbaaa.png" alt="">
+            </li>
+            <li>
+                <img src="https://ae01.alicdn.com/kf/He7250c553071477499a15acf061d0872J.png" alt="">
+            </li>
+        </ul>
+   </div>
+  </div>
+
+
+<div id="xiaociguai" class="enable-electric">
+        <img title="电磁波切换" alt="电磁波切换" src="https://ae01.alicdn.com/kf/H24f3a859b6504b08a7e5776373521265B.jpg"><!-- transform: rotateY(180deg); -->
+    </div>
+
+
+<script src="j-base.js"></script>
