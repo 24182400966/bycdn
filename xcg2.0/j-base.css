@@ -126,6 +126,7 @@
     height: 100px;*/
 }
 #div_digd img{
+     display:none;
     -webkit-background-size: cover;
     background-size: cover;
     list-style-type: none;
