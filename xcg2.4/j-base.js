@@ -29,7 +29,7 @@ function f1(i){
             for(var j=0;j<oimg.length;j++){
                 oimg[j].style.display='none';
             }
-            if(num2==oimg.length*3)
+            if(num2==oimg.length*1)
             {
                 clearInterval(t);
                 return false;

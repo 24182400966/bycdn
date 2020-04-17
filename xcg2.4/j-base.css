@@ -108,6 +108,11 @@
     /*background-color: pink;*/
     z-index: 2468170656;
 }
+#div_digd ul{
+	margin: 0;
+	padding: 0;
+}
+
 #div_digd li{
     /*-webkit-background-size: cover;
     background-size: cover;*/
