@@ -1,0 +1,205 @@
+     
+@keyframes jumping {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-400px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+@keyframes eyemove {
+  0% {
+    transform: translate(0)
+  }
+
+  20% {
+    transform: translate(0)
+  }
+
+  25% {
+    transform: translateY(-10px)
+  }
+
+  45% {
+    transform: translateY(-10px)
+  }
+
+  50% {
+    transform: translate(0)
+  }
+
+  60% {
+    transform: translate(0)
+  }
+
+  65% {
+    transform: translate(-8px)
+  }
+
+  85% {
+    transform: translate(-8px)
+  }
+
+  90% {
+    transform: translate(0)
+  }
+
+  to {
+    transform: translate(0)
+  }
+}
+
+#green_channel #green_channel_digg,#green_channel #green_channel_favorite,#green_channel #green_channel_follow {
+    background: #fff;
+    color: #5bf!important;
+    border: 1px solid #5bf!important;
+    text-shadow: none;
+    box-shadow: none
+}
+
+#green_channel #green_channel_digg:hover,#green_channel #green_channel_favorite:hover,#green_channel #green_channel_follow:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,.5)
+}
+
+#green_channel_digg:before,#green_channel_favorite:before,#green_channel_follow:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px
+}
+
+#green_channel_digg:before {
+    background-image: url(https://images.cnblogs.com/cnblogs_com/vvjiang/996881/o_thumb_up_24.png)
+}
+
+#green_channel_follow:before {
+    background-image: url(https://images.cnblogs.com/cnblogs_com/vvjiang/996881/o_love1.png)
+}
+
+#green_channel_favorite:before {
+    background-image: url(https://images.cnblogs.com/cnblogs_com/vvjiang/996881/o_star.png)
+}
+
+#div_digg {
+    bottom: 150px;
+    margin: 0;
+    position: fixed;
+    left: 216px;
+    animation: jumping 5s ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 1992
+}
+#div_digd {
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    bottom: 40px;
+    margin: 0;
+    position: absolute;
+    left: 80px;
+    /*background-color: pink;*/
+    z-index: 2468170656;
+}
+#div_digd ul{
+    margin: 0;
+    padding: 0;
+}
+#div_digd li,ul{
+    /*-webkit-background-size: cover;
+    background-size: cover;*/
+    list-style-type: none;
+    float: left;
+    /*width: 100px;
+    height: 100px;*/
+}
+#div_digd img{
+    -webkit-background-size: cover;
+    background-size: cover;
+    list-style-type: none;
+    float: left;
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+.buryit {
+    display: none
+}
+
+.diggit {
+    background: url(https://ae01.alicdn.com/kf/Ha4a1815289bb45a09c647887dc6f604dN.png) no-repeat;
+    border-radius: 50%;
+    box-shadow: inset 0 0 15px 5px #fff;
+    cursor: pointer;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    text-align: center
+}
+
+.diggit:before {
+    content: "点\00A0\00A0\00A0赞";
+    position: absolute;
+    top: -40px;
+    left: 16px;
+    font-size: 26px;
+    color: #5bf;
+
+
+}
+
+#div_digg .diggnum {
+    color: #eee;
+    font-family: Verdana;
+    font-size: 35px;
+    line-height: 2em!important
+}
+
+#digg_tips {
+    color: #fa5!important;
+    width: 200px;
+    text-align: center;
+    margin-left: -50px;
+    margin-top: -170px
+}
+
+a.digg_gray {
+    font-size: 18px
+}
+
+#xiaociguai {
+    position: fixed;
+    bottom: 70px;
+    left: 200px;
+    cursor: pointer;
+    z-index: 1993
+}
+
+#xiaociguai>img {
+    width: 155px
+}
+
+#xiaociguai:after {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: #666;
+    position: absolute;
+    left: 69px;
+    top: 43px;
+    animation: eyemove 10s ease-in-out;
+    animation-iteration-count: infinite
+}
+
+#xiaociguai .enable-electric,#xiaociguai:hover {
+    -webkit-filter: saturate(7);
+    filter: saturate(7)
+}
